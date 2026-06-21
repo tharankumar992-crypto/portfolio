@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mechanical engineering portfolio of Tharan Kumar, a CAD designer specializing in machine design, gear systems, and SolidWorks assemblies." />
+  <title>Tharan Kumar | Mechanical Engineering Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <span class="brand">THARAN KUMAR</span>
+      <div class="nav-links">
+        <a href="#about">ABOUT</a>
+        <a href="#skills">SKILLS</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="#contact">CONTACT</a>
+      </div>
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">
+        <span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#about" onclick="closeMobileMenu()">ABOUT</a>
+      <a href="#skills" onclick="closeMobileMenu()">SKILLS</a>
+      <a href="#projects" onclick="closeMobileMenu()">PROJECTS</a>
+      <a href="#contact" onclick="closeMobileMenu()">CONTACT</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-content reveal">
+      <div class="status-pill">
+        <span class="status-dot"></span>
+        Open to design engineering internships
+      </div>
+      <h1>THARAN<br />KUMAR</h1>
+      <p class="hero-sub">Mechanical Engineering Student &amp; CAD Designer.<br />Designing precise mechanical systems and innovative solutions.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-secondary">Contact Me</a>
+      </div>
+      <div class="hero-metrics">
+        <div><strong>09</strong><span>Design Projects</span></div>
+        <div><strong>10</strong><span>Core Skills</span></div>
+        <div><strong>01</strong><span>Clear Mission</span></div>
+      </div>
+    </div>
+    <div class="hero-gear" aria-hidden="true">
+      <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="gear-svg">
+        <g transform="translate(100,100)">
+          <path d="M-8-68h16l3 12 10 4 9-9 14 8-3 12 8 8 12-3 8 14-9 9 3 10 12 3v16l-12 3-3 10 9 9-8 14-12-3-8 8 3 12-14 8-9-9-10 3-3 12h-16l-3-12-10-3-9 9-14-8 3-12-8-8-12 3-8-14 9-9-3-10-12-3v-16l12-3 3-10-9-9 8-14 12 3 8-8-3-12z" fill="none" stroke="currentColor" stroke-width="1.5"/>
+          <circle r="46" fill="none" stroke="currentColor" stroke-width="1.5"/>
+          <circle r="26" fill="none" stroke="currentColor" stroke-width="1"/>
+          <circle r="6" fill="currentColor"/>
+          <line x1="0" y1="-46" x2="0" y2="-60" stroke="currentColor" stroke-width="1"/>
+          <line x1="0" y1="46" x2="0" y2="60" stroke="currentColor" stroke-width="1"/>
+          <line x1="-46" y1="0" x2="-60" y2="0" stroke="currentColor" stroke-width="1"/>
+          <line x1="46" y1="0" x2="60" y2="0" stroke="currentColor" stroke-width="1"/>
+        </g>
+      </svg>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow">01. Background</p>
+        <h2>Precision in Every Detail.</h2>
+      </div>
+      <div class="about-grid">
+        <p class="about-text reveal">
+          I'm a Mechanical Engineering student passionate about turning functional ideas into precise, manufacturable designs.
+          My focus is CAD modeling, machine design, and product development, with a particular interest in gear systems,
+          manufacturing, drones, and engineering solutions that solve practical problems.
+        </p>
+        <div class="about-stats reveal">
+          <div class="stat">
+            <strong>09</strong>
+            <span>Projects</span>
+          </div>
+          <div class="stat">
+            <strong>10</strong>
+            <span>Core Skills</span>
+          </div>
+          <div class="stat">
+            <strong>01</strong>
+            <span>Mission</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section skills-section bg-muted" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow">02. Expertise</p>
+        <h2>Tools &amp; Techniques.</h2>
+      </div>
+      <div class="skills-grid" id="skillsGrid"></div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section projects-section" id="projects">
+    <div class="container">
+      <div class="projects-top">
+        <div class="section-header reveal">
+          <p class="eyebrow">03. Work</p>
+          <h2>Selected Projects.</h2>
+        </div>
+        <div class="filter-group reveal" role="group" aria-label="Filter projects">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="transmission">Transmission</button>
+          <button class="filter-btn" data-filter="machine">Machine</button>
+          <button class="filter-btn" data-filter="product">Product</button>
+        </div>
+      </div>
+      <div class="projects-grid" id="projectsGrid"></div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section contact-section" id="contact">
+    <div class="container contact-inner reveal">
+      <p class="eyebrow eyebrow-light">04. Connect</p>
+      <h2 class="contact-heading">Let's build<br />something precise.</h2>
+      <div class="contact-actions">
+        <a href="mailto:tharankumar992@gmail.com" class="contact-btn contact-btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          tharankumar992@gmail.com
+        </a>
+        <a href="https://linkedin.com/in/tharankumar" target="_blank" rel="noreferrer" class="contact-btn contact-btn-outline">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> THARAN KUMAR. ALL RIGHTS RESERVED.</p>
+      <p>ENGINEERED WITH PRECISION.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
